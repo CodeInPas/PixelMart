@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="PixelMart"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="PixelMart.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main/fMain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="utils/uMathHelper.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="utils/uPathfinding.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="simulation/uCustomerAI.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="simulation/uEconomyLogic.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="simulation/uInventorySys.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="simulation/uWorldGrid.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="shared/uConstants.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="shared/uGameTypes.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="engine/uDoubleBuffer.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="engine/uGameLoop.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="engine/uRenderer.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="simulation/fstock.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="StockForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main/fsummary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SummaryForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fSummary"/>
+      </Unit>
+      <Unit>
+        <Filename Value="engine/usaveload.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSaveLoad"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main/fledger.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LedgerForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fLedger"/>
+      </Unit>
+      <Unit>
+        <Filename Value="engine/uvisuals.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uVisuals"/>
+      </Unit>
+      <Unit>
+        <Filename Value="engine/uspritemanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSpriteManager"/>
+      </Unit>
+      <Unit>
+        <Filename Value="engine/ustaffai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uStaffAI"/>
+      </Unit>
+      <Unit>
+        <Filename Value="engine/usoundmanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSoundManager"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main/fpricing.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PricingForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fPricing"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main/fstockmonitor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="StockMonitorForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fStockMonitor"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="bin/PixelMart"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="src/engine;src/simulation;src/shared;src/utils;main;utils;simulation;shared;engine"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <Optimizations>
+        <OptimizationLevel Value="3"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <DebugInfoType Value="dsDwarf3"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+</CONFIG>
