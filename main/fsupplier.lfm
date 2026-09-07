@@ -1,0 +1,9 @@
+object SupplierForm: TSupplierForm
+  Left = 400
+  Height = 300
+  Top = 250
+  Width = 500
+  Caption = 'Distributor & Supplier (Kulakan)'
+  LCLVersion = '4.8.0.0'
+  OnCreate = FormCreate
+end
