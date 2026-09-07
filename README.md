@@ -28,6 +28,8 @@ Di dalam game ini, pemain bertindak sebagai pemilik warung yang harus bertahan h
 4. **Analisis Laba:** Di akhir hari, buka `Buku Besar` untuk melihat rekapitulasi keuangan Anda dan pastikan saldo kas Anda tetap bertumbuh!
 
 ---
+## Download
+Link Download https://github.com/CodeInPas/PixelMart/releases/tag/PixeMart_v01
 
 
 
