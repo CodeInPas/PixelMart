@@ -1,0 +1,156 @@
+object MainForm: TMainForm
+  Left = 350
+  Height = 504
+  Top = 150
+  Width = 957
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'PixelMart : Simulator Warung Harian'
+  ClientHeight = 504
+  ClientWidth = 957
+  Color = 4210752
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Menu = MainMenu1
+  Position = poScreenCenter
+  LCLVersion = '4.8.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object pbScreen: TPaintBox
+    Left = 0
+    Height = 504
+    Top = 0
+    Width = 688
+    Align = alClient
+    OnMouseDown = pbScreenMouseDown
+    OnPaint = pbScreenPaint
+  end
+  object pnlUI: TPanel
+    Left = 688
+    Height = 504
+    Top = 0
+    Width = 269
+    Align = alRight
+    BevelOuter = bvNone
+    ClientHeight = 504
+    ClientWidth = 269
+    Color = 11775620
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object lblStatus: TLabel
+      Left = 0
+      Height = 32
+      Top = 0
+      Width = 269
+      Align = alTop
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Fase: Loading...'
+      Color = 3026478
+      Font.Color = 10810615
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+    object btnAction: TButton
+      Left = 8
+      Height = 40
+      Top = 40
+      Width = 253
+      Align = alTop
+      BorderSpacing.Around = 8
+      Caption = 'Loading...'
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      OnClick = btnActionClick
+    end
+    object btnStock: TButton
+      Left = 8
+      Height = 38
+      Top = 366
+      Width = 253
+      Align = alBottom
+      BorderSpacing.Around = 8
+      Caption = 'Belanja'
+      TabOrder = 1
+      OnClick = btnStockClick
+    end
+    object btnledger: TButton
+      Left = 8
+      Height = 38
+      Top = 412
+      Width = 253
+      Align = alBottom
+      BorderSpacing.Around = 8
+      Caption = 'Buku Besar'
+      TabOrder = 2
+      OnClick = btnledgerClick
+    end
+    object btnpricing: TButton
+      Left = 8
+      Height = 38
+      Top = 458
+      Width = 253
+      Align = alBottom
+      BorderSpacing.Around = 8
+      Caption = 'Atur Harga'
+      TabOrder = 3
+      OnClick = btnpricingClick
+    end
+    object btnLiveMonitor: TButton
+      Left = 8
+      Height = 40
+      Top = 318
+      Width = 253
+      Align = alBottom
+      BorderSpacing.Around = 8
+      Caption = 'Cek Barang'
+      TabOrder = 4
+      OnClick = btnLiveMonitorClick
+    end
+    object pnStock: TPanel
+      Left = 9
+      Height = 220
+      Top = 89
+      Width = 251
+      Align = alClient
+      BorderSpacing.Around = 9
+      BevelOuter = bvNone
+      ParentBackground = False
+      TabOrder = 5
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 151
+    Top = 142
+    object MenuItem1: TMenuItem
+      Caption = 'Aplikasi'
+      object MenuItem3: TMenuItem
+        Caption = 'Lihat Source Code'
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object mnExit: TMenuItem
+        Caption = 'Keluar'
+        OnClick = mnExitClick
+      end
+    end
+    object MenuItem9: TMenuItem
+      Caption = 'Bantuan'
+      object MenuItem10: TMenuItem
+        Caption = 'Tentang'
+        OnClick = MenuItem10Click
+      end
+    end
+  end
+end
